@@ -1,0 +1,37 @@
+<?xml version="1.0"?>
+<types xmlns="http://www.qeo.org/formal/2013/Qeo_Data_Model" version="0.1">
+  <module name="org::muizenhol::evohome::item">
+    <struct behavior="state" name="Temperature">
+      <member name="sensor" type="int32" key="true" />
+      <member name="zone" type="int16"/>
+      <member name="tempSet" type="int16"/>
+      <member name="tempSetZone" type="int16"/>
+      <member name="tempMeasured" type="int16"/>
+      <member name="tempMeasuredZone" type="int16"/>
+      <member name="heatDemandZone" type="int16"/>
+      <member name="zoneName" type="string"/>
+      <member name="sensorName" type="string"/>
+    </struct>
+  </module>
+
+
+<!--
+
+static const qeo_typedef_t _tsm_temperature_message[] =
+{
+  { .tc = QEO_TYPECODE_STRUCT, .name = "org.muizenhol.evohome.item.Temperature",
+    .size = sizeof(temperature_t), .nelem = 9 },
+  { .tc = QEO_TYPECODE_INT32, .name = "sensor", .offset = offsetof(temperature_t, sensor), .flags = QEO_FLAG_KEY },
+  { .tc = QEO_TYPECODE_INT32, .name = "zone", .offset = offsetof(temperature_t, zone) },
+  { .tc = QEO_TYPECODE_INT32, .name = "tempset", .offset = offsetof(temperature_t, temp_set) },
+  { .tc = QEO_TYPECODE_INT32, .name = "tempsetZone", .offset = offsetof(temperature_t, temp_set_zone) },
+  { .tc = QEO_TYPECODE_INT32, .name = "tempmeasured", .offset = offsetof(temperature_t, temp_measured) },
+  { .tc = QEO_TYPECODE_INT32, .name = "tempmeasuredZone", .offset = offsetof(temperature_t, temp_measured_zone) },
+  { .tc = QEO_TYPECODE_INT32, .name = "zoneHeatDemand", .offset = offsetof(temperature_t, zone_heat_demand) },
+  { .tc = QEO_TYPECODE_STRING, .name = "zonename", .size = 0, .offset = offsetof(temperature_t, zone_name) },
+  { .tc = QEO_TYPECODE_STRING, .name = "sensorname", .size = 0, .offset = offsetof(temperature_t, sensor_name) }
+
+};
+-->
+</types>
+

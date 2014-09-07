@@ -1,0 +1,18 @@
+Source: evomon
+Priority: extra
+Maintainer: Tom Billiet <mouse256@gmail.com>
+Build-Depends: debhelper (>= 8.0.0), pkg-config, tinq-c-dev
+Standards-Version: 3.9.2
+Section: libs
+Homepage: https://github.com/mouse256/evomon
+#Vcs-Git: git://git.debian.org/collab-maint/tinq-c.git
+#Vcs-Browser: http://git.debian.org/?p=collab-maint/tinq-c.git;a=summary
+
+Package: evomon
+Section: libs
+Architecture: any
+Depends: tinq-c
+Description: Monitoring app for Honewell evohome/evotouch
+  TODO
+
+

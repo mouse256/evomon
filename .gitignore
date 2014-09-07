@@ -1,0 +1,13 @@
+build/
+libs/
+evomonDaemon
+*.so
+*.so.0
+.log_file*
+state.out
+*.swp
+debian/*.log
+debian/evomon.substvars
+debian/evomon/
+debian/files
+debian/substvars
